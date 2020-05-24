@@ -7,6 +7,18 @@ function main() {
 
     const p = new Player($target);
     p.setup();
+
+    // for() {
+    //     // ...
+    //     if (video.playable) {
+    //         VideoPlayableFactory.create();
+    //     } else if (...) {
+    //         // ...
+    //     } else {
+    //         VideoReadonlyFactory.create();
+    //     }
+    // }
+
 }
 
 main();
