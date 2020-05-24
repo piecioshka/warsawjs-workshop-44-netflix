@@ -17,7 +17,7 @@ export class DefaultTheme {
 
         $progress.appendChild($bar);
 
-        this.$el.appendChild($progress);
+        this.$el.querySelector('.controls').appendChild($progress);
         return this;
     }
     addButton(name, label, cb) {
@@ -25,7 +25,7 @@ export class DefaultTheme {
         $button.textContent = label;
         $button.classList.add('btn', 'btn-primary', 'mr-2', name);
         $button.addEventListener('click', cb);
-        this.$el.appendChild($button);
+        this.$el.querySelector('.controls').appendChild($button);
         return this;
     }
     render($target) {

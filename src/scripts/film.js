@@ -5,8 +5,8 @@ function main() {
 
     const $target = document.querySelector('.player-container');
 
-    const p = new Player();
-    p.setup($target);
+    const p = new Player($target);
+    p.setup();
 }
 
 main();
