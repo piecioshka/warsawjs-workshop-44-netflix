@@ -1,18 +1,18 @@
 import { PlayerCore } from './core/index.js';
 import { PlayerGui } from './gui/index.js';
+import { DefaultTheme } from './gui/themes/default.js';
 
 export class Player {
     constructor() {
-        const $target = document.querySelector('.player-container');
+        this.core = new PlayerCore();
+        this.gui = new PlayerGui();
+    }
 
-        const core = new PlayerCore();
-        const gui = new PlayerGui();
-
-        gui.addListener('click:play', () => {
-            core.play();
+    setup($target) {
+        this.gui.addListener('click:play', () => {
+            this.core.play();
         });
-        gui.triggerEvent('click:play', /* payload */ { foo: 1 });
 
-        gui.build(DefaultTheme, $target);
+        this.gui.build(DefaultTheme, $target);
     }
 }

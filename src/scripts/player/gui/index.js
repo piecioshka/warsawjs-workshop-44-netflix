@@ -5,11 +5,11 @@ export class PlayerGui extends EventEmitter {
         new Theme()
             .createControls()
             .createProgress()
-            .addButton('play', 'Play', () => {
-
+            .addButton('play', '▶️', () => {
+                this.triggerEvent('click:play');
             })
-            .addButton('stop', 'Stop', () => {
-
+            .addButton('stop', '⏹', () => {
+                this.triggerEvent('click:stop');
             })
             .render($target);
     }
