@@ -2,7 +2,7 @@
 
 ⛩️ WarsawJS Workshop #44 — Wzorce Projektowe (Design Patterns)
 
-## Demo 🎉
+## Preview 🎉
 
 <https://piecioshka.github.io/warsawjs-workshop-44-netflix>
 
