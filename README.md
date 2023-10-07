@@ -37,10 +37,6 @@
 Contributions, issues and feature requests are welcome!<br />
 Feel free to check [issues page](https://github.com/piecioshka/warsawjs-workshop-44-netflix/issues/).
 
-## Show your support
-
-Give a ⭐️ if this project helped you!
-
 ## Related
 
 * <https://github.com/dkarski/warsawjs-workshop-44>
