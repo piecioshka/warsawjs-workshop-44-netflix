@@ -10,7 +10,7 @@
         "url": "https://piecioshka.pl/"
     },
     "scripts": {
-        "start": "cd src/ && http-server -c-1 -o .",
+        "start": "http-server src/ -c-1",
         "lint": "eslint src/",
         "deploy": "cross-env NODE_DEBUG=gh-pages gh-pages -d src/"
     },
